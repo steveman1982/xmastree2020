@@ -3,6 +3,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import re
 import matplotlib.pyplot as plt
 
+plt.ion()
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
@@ -22,11 +23,14 @@ for slab in coords_bits:
         new_coord.append(int(re.sub(r'[^-\d]', '', i)))
     coords.append(new_coord)
 
+plt.show()
+
 for triplet in coords:
-    ax.scatter(triplet[0], triplet[1], triplet[2], marker='^')
+    ax.scatter(triplet[0], triplet[1], triplet[2], marker='^', facecolor=[1, 0, 1])
 
 ax.set_xlabel('X')
 ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 
-plt.show()
+plt.draw()
+plt.pause(100)
