@@ -83,8 +83,10 @@ def xmaslight():
 
     # the two colours in GRB order
     # if you are turning a lot of them on at once, keep their brightness down please
-    colourA = [0, 50, 50]  # purple
-    colourB = [50, 50, 0]  # yellow
+
+    #Turning the yellow and purle all the way up to better see it in our simulation
+    colourA = [0, 255, 255]  # purple
+    colourB = [255, 255, 0]  # yellow
 
     # INITIALISE SOME VALUES
 
