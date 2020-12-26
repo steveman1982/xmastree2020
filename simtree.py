@@ -25,4 +25,4 @@ class Simtree:
 
         plt.draw()
         # wait a bit so we can enjoy the result
-        plt.pause(0.01)
+        plt.pause(0.1)
