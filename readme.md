@@ -1,1 +1,1 @@
-![](images/treesim.png)
+![](images/spinning.gif)
